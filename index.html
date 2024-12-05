@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Dados</title>
+</head>
+<body>
+    
+    <h2>Login</h2>
+    <form id="loginform">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required> <br><br>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" required> <br><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Aqui será exibido o erro de login -->
+    <div id="login-error" style="color: red;"></div>
+
+    <div id="userdata" style="display:none;">
+        <!-- Exibindo as informações de nome completo, idade e código preferido -->
+        <h2>Nome Completo: <span id="completename"></span></h2>
+        <h2>Resultado Idade: <span id="resultage"></span></h2>
+        <h2>Código preferido: <span id="preferedlanguage"></span></h2>
+
+        <!-- Exibindo as listas de tarefas -->
+        <h1>Tarefas Concluídas</h1>
+        <ul id="completedtasks"></ul>
+    
+        <h1>Tarefas Pendentes</h1>
+        <ul id="pendingtasks"></ul>
+    </div>
+    
+    <script src="main.js"></script> <!-- Vinculando o arquivo JavaScript -->
+
+</body>
+</html>
